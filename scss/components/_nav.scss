@@ -1,0 +1,11 @@
+@import './roots';
+
+.navbar{
+    background-color: $primary;
+}
+
+.nav-link{
+    color: $background !important;
+    font-size: $paragraph;
+    font-weight: 600;
+}

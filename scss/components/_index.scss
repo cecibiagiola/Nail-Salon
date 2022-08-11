@@ -1,0 +1,218 @@
+@import './roots';
+
+main{
+    background-color: $background;
+    overflow-x: hidden;
+}
+
+
+.main-container{
+    background-color: $background;
+    color: $font-color;
+    margin-top: 5rem;
+}
+
+.img-nails{
+    width: 60%;
+    height: 80%;
+    outline: 5px solid $primary;
+outline-offset: 12px;
+}
+
+.sub-title{
+    color: $primary;
+    font-size: $subtitles;
+    font-weight: 600;
+}
+.title-main{
+    color: $font-color;
+    font-weight: 300;
+    padding-bottom: 10px;
+    font-size: $titles;
+    
+}
+
+/* otra prueba */
+.row-nails{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    color: $font-color;
+}
+
+.text-box{
+    width: 80%;
+} 
+
+.main-paragraph{
+    font-size: $paragraph;
+    width: 100%;
+}
+
+.btn-book{
+    background-color: $primary;
+    text-decoration: none;
+    color: $font-color;
+    text-transform: uppercase;
+    padding: 15px;
+    
+    font-size: $paragraph;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.btn-book:hover{
+    color: $font-color;
+    background-color: $secondary;
+}
+/* fin otra prueba */
+
+/* pruba */
+ul{
+   list-style: none; 
+}
+
+.image-accordion{
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    overflow:hidden;
+}
+
+.image-accordion{
+    ul{
+        width: 100%;
+        height: 100%;
+        display: table;
+        table-layout: fixed;
+            li{
+                width: 16.66%;
+                height: 100%;
+                display: table-cell;
+                vertical-align: bottom;
+                position: relative;
+                transition: all 500ms ease;
+            }
+    }
+}
+
+.image-accordion{
+    ul{
+        li:nth-child(1){
+            background: url(../../img/gallery.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+.image-accordion{
+    ul{
+        li:nth-child(2){
+            background: url(../../img/gallery2.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+.image-accordion{
+    ul{
+        li:nth-child(3){
+            background: url(../../img/gallery3.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+.image-accordion{
+    ul{
+        li:nth-child(4){
+            background: url(../../img/gallery4.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+.image-accordion ul:hover li,
+.image-accordion ul:focus-within li{
+    width: 8%;
+}
+
+.image-accordion ul:hover li:hover,
+.image-accordion ul li:focus,
+.image-accordion ul:focus-within li:focus {
+    width: 60%;
+}
+
+.image-accordion ul li:focus{
+    outline: none;
+}
+
+.image-accordion{
+    ul{
+        li{
+            div{
+                display: block;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        padding: 30px 20px 30px;
+                        z-index: 3;
+                        color: $font-color;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: flex-end;
+                        flex-direction: column;
+                    }
+            }
+        }
+    }
+}
+
+.image-accordion ul li div a *{
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transform: translateX(-20px);
+    transition: all 400ms ease;
+}
+
+.image-accordion ul li div a h2{
+    font-size: $subtitles;
+    letter-spacing: 1px;
+    text-overflow: clip;
+    margin-bottom: 10px;
+}
+
+.image-accordion ul li div a p{
+    font-size: $paragraph;
+    white-space: nowrap;
+    line-height: 1.2;
+   
+}
+
+.image-accordion ul:hover li:hover a,
+.image-accordion ul li:focus a,
+.image-accordion ul:focus-within li:focus a {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.image-accordion ul:hover li:hover a *,
+.image-accordion ul li:focus a *,
+.image-accordion ul:focus-within li:focus a *{
+    opacity: 1;
+    transform: translate(0px);
+}
+
+
+
+
+
+
+/* fin prueba */
