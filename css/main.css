@@ -38,7 +38,6 @@ main {
 }
 
 .main-container {
-  background-color: black;
   color: #fff;
   margin-top: 5rem;
 }
@@ -48,6 +47,7 @@ main {
   height: 80%;
   outline: 5px solid rgb(209, 101, 155);
   outline-offset: 12px;
+  grid-auto-flow: column;
 }
 
 .sub-title {
@@ -80,6 +80,18 @@ main {
   width: 100%;
 }
 
+@media (max-width: 770px) {
+  .sub-title {
+    text-align: center;
+  }
+  .title-main {
+    text-align: center;
+  }
+  .nails-description {
+    padding: 15px;
+    text-align: justify;
+  }
+}
 .btn-book {
   background-color: rgb(209, 101, 155);
   text-decoration: none;

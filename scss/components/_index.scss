@@ -7,16 +7,18 @@ main{
 
 
 .main-container{
-    background-color: $background;
+    
     color: $font-color;
     margin-top: 5rem;
+    
 }
 
 .img-nails{
     width: 60%;
     height: 80%;
     outline: 5px solid $primary;
-outline-offset: 12px;
+    outline-offset: 12px;
+    grid-auto-flow: column;
 }
 
 .sub-title{
@@ -29,8 +31,8 @@ outline-offset: 12px;
     font-weight: 300;
     padding-bottom: 10px;
     font-size: $titles;
-    
 }
+    
 
 /* otra prueba */
 .row-nails{
@@ -47,6 +49,20 @@ outline-offset: 12px;
 .main-paragraph{
     font-size: $paragraph;
     width: 100%;
+}
+@media  (max-width: 770px) {
+    
+    .sub-title{
+        text-align: center;
+    }
+    .title-main{
+        text-align: center;
+    }
+    
+    .nails-description{
+        padding: 15px;
+        text-align: justify;
+    }
 }
 
 .btn-book{
